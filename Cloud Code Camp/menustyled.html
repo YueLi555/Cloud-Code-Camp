@@ -12,7 +12,7 @@
     <!-- This style is for the selector-->
     <!-- Eample: If you use the select tag for the dropdown menu, you can use the selector for setting style-->
 <style>
-        .menu {  
+        #mySelect {  
           background-color: lightgreen;
           border: 10;
           padding: 5px;
@@ -26,12 +26,30 @@
 
     <!-- selector for dropdown menu -->
 
-    <select class="menu">
+    <select id="mySelect"  onchange="myFunction()">
         <option value="0">Pick one!
         <option value="1">Door #1
         <option value="2">Door #2
         <option value="3">Door #3
         <option value="4">none of these
     </select>
+
+    <p id="answer">Your choice will appear here.</p>
+
+    <script>
+        function myFunction() {
+
+            var output; 
+            
+            var x = document.getElementById("mySelect").value;
+            if (x == "0"){output = "Please make a selection!";}
+            else if (x == "1"){output = "You chose Door #1!";}
+            else if (x == "2"){output = "You chose Door #2!";}
+            else if (x == "3"){output = "You chose Door #3!";}
+            else {output = "Hard decision?";}
+           
+            document.getElementById("answer").innerHTML = output;
+        }
+        </script>
 </body>
 </html>

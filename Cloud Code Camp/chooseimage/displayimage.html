@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Choose Images</title>
+<script>
+function myFunction() {
+    // to make the images's src as a var
+    var imgsource; 
+
+    // to get <select> tag's id first, and then to get the <select> tag's value
+    var x = document.getElementById("mySelect").value;
+
+    // to use condition if the <select>'s value ="1" is True, and then the output will be
+    if (x == "1"){imgsource = "mountain.jpg";}
+    else if (x == "2"){imgsource = "forest.jpg";}
+    else {imgsource = "waterfall.jpg";}  
+   
+    // to get the image's id, and then to get the images's src, to save the src for output
+    // what I need to display?
+    document.getElementById("display").src = imgsource;
+}
+</script>
+
+</head>
+<body>
+<!-- The descrition of this menu -->
+    <p>Try My Menu!</p>
+
+    <!-- create a id, and to create a function for events -->
+<select id="mySelect" onchange="myFunction()">
+  <option value="1" selected>Mountain
+  <option value="2">Forest
+  <option value="3">Waterfall
+</select>
+
+</br></br>
+
+<!-- This id is for displaying images (images are from src=" " ) -->
+<img id = "display" src = "mountain.jpg" style="width:300px;height:200px;">
+
+</body>
+</html>
+
+<!-- Tips: -->
+    <!-- 1: Get the element by id first, and to get the what kinda methos you want/need  -->
+    <!-- 2:  -->

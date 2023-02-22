@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Permissions for Files and Directories</title>
+</head>
+<body>
+    <h1>Hi, This Set Permissions for Files and Directories</h1>
+    <h4>ubuntu@ip-172-31-94-148:/$ cd /var/www/html</h4>
+    <li> To open the /var/www/html first, because we need to upload our local file to the /var/www/html first.</li>
+    <h4>ubuntu@ip-172-31-94-148:/var/www/html$ ls -l</h4>
+    <li>We also can use this codes to check what we have for now. </li>
+    <h4>ubuntu@ip-172-31-94-148:/var/www/html$ sudo chown -R $root:$root /var/www/html</h4>
+    <h4>ubuntu@ip-172-31-94-148:/var/www/html$ sudo chown -R $ubuntu:$ubuntu /var/www/html</h4>
+    <li>Change owner of /var/www/html directory to apache user, here is uubuntu. </li>
+    <h4>$ sudo chmod -R 777 /var/www/html</h4>
+    <li>This permission can edit to transfer files to  /var/www/html from our local files.</li>
+
+</body>
+</html>
