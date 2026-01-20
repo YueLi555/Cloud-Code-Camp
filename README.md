@@ -2,4 +2,4 @@ Textbook Codes of North Seattle College at Applied Science department  - for Com
 
 For learning only
 
-Copyright for using in business
+Copyright is at Seattle Colleges - North Seattle College only
